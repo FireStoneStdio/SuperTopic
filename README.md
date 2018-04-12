@@ -1,4 +1,4 @@
 # SuperTopic
-服务器版本：tomcat8.5
-开发环境：eclipse JEE
-数据库：MySQL
+鏈嶅姟鍣ㄧ増鏈細tomcat8.5<br>
+寮�鍙戠幆澧冿細eclipse JEE<br>
+鏁版嵁搴擄細MySQL<br>
