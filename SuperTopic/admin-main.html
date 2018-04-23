@@ -1,0 +1,87 @@
+<!doctype html>
+<!--网站后台管理界面-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>                
+<link href="css/nav.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+</head>
+
+<body>
+	<div class="nav">
+    <div class="nav-top">
+        <div id="mini" style="border-bottom:1px solid rgba(255,255,255,.1)"><img src="images/mini.png" ></div>
+    </div>
+    <ul>  
+        <li class="nav-item">
+            <a href="javascript:;"><i class="my-icon nav-icon icon_1"></i><span>网站配置</span><i class="my-icon nav-more"></i></a>
+            <ul>
+                <li><a href="javascript:;"><span>网站设置</span></a></li>
+                <li><a href="javascript:;"><span>友情链接</span></a></li>
+                <li><a href="javascript:;"><span>分类管理</span></a></li>
+                <li><a href="javascript:;"><span>系统日志</span></a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;"><i class="my-icon nav-icon icon_2"></i><span>超级话题</span><i class="my-icon nav-more"></i></a>
+            <ul>
+                <li><a href="javascript:;" onClick="SendTopic()"><span>发布话题</span></a></li>
+                <li><a href="javascript:;"><span>查看评论</span></a></li>
+<!--                <li><a href="javascript:;"><span>登录日志</span></a></li>-->
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;"><i class="my-icon nav-icon icon_3"></i><span>订单管理</span><i class="my-icon nav-more"></i></a>
+            <ul>
+                <li><a href="javascript:;"><span>订单列表</span></a></li>
+                <li><a href="javascript:;"><span>打个酱油</span></a></li>
+                <li><a href="javascript:;"><span>也打酱油</span></a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+	<div id="main">
+	</div>
+</body>
+	
+<script type="text/javascript" charset="utf-8">
+	"use strict"
+	function SendTopic(){
+		document.getElementById("main").innerHTML=`<!--创建超级话题时使用的界面-->
+<form action="">
+	<table width="80%" border="0">
+  <tbody>
+    <tr>
+      <td>标题</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>题图</td>
+      <td><input type="file"></td>
+    </tr>
+    <tr>
+      <td>红方</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>蓝方</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>描述</td>
+      <td><textarea><input type="text"></textarea></td>
+    </tr>
+    <tr>
+      <td>定时发送<input type="checkbox"></td>
+      <td><input type="datetime-local"></td>
+    </tr>
+  </tbody>
+</table>
+<input type="button" value="发布">
+</form>`;
+	}
+</script>	
+</html>
